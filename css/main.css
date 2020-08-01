@@ -28,3 +28,13 @@
   left: 47%;
   opacity: 0.5;
 }
+
+@media (max-width: 600px) {
+  .main-header .showcase {
+    padding-top: 20px;
+  }
+  .scroll-icon {
+    bottom: 7%;
+    left: 80%;
+  }
+}

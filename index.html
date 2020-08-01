@@ -258,6 +258,32 @@
       <div class="container">
         <div class="row">
           <div class="col s12 m6">
+            <div class="card-panel z-depth-5">
+              <h4>Contact Us</h4>
+              <div class="input-field">
+                <input type="text" id="name" placeholder="Name" />
+                <label for="name">Name</label>
+              </div>
+              <div class="input-field">
+                <input type="email" id="email" placeholder="Email" />
+                <label for="name">Email</label>
+              </div>
+              <div class="input-field">
+                <input type="text" id="phone" placeholder="Phone Number" />
+                <label for="name">Phone</label>
+              </div>
+              <div class="input-field">
+                <textarea
+                  id="message"
+                  class="materialize-textarea"
+                  placeholder="Message"
+                ></textarea>
+                <label for="message">Message</label>
+              </div>
+              <input type="submit" value="submit" class="btn blue-grey" />
+            </div>
+          </div>
+          <div class="col s12 m6">
             <h2>FAQ</h2>
             <ul class="collapsible">
               <li>
@@ -328,32 +354,6 @@
                 </div>
               </li>
             </ul>
-          </div>
-          <div class="col s12 m6">
-            <div class="card-panel z-depth-5">
-              <h4>Contact Us</h4>
-              <div class="input-field">
-                <input type="text" id="name" placeholder="Name" />
-                <label for="name">Name</label>
-              </div>
-              <div class="input-field">
-                <input type="email" id="email" placeholder="Email" />
-                <label for="name">Email</label>
-              </div>
-              <div class="input-field">
-                <input type="text" id="phone" placeholder="Phone Number" />
-                <label for="name">Phone</label>
-              </div>
-              <div class="input-field">
-                <textarea
-                  id="message"
-                  class="materialize-textarea"
-                  placeholder="Message"
-                ></textarea>
-                <label for="message">Message</label>
-              </div>
-              <input type="submit" value="submit" class="btn blue-grey" />
-            </div>
           </div>
         </div>
       </div>
@@ -442,7 +442,9 @@
     <script>
       $(document).ready(function () {
         // Init Sidenav
-        $('.button-collapse').sideNav();
+        $('.button-collapse').sideNav({
+          closeOnClick: true,
+        });
 
         // Init ScrollSpy
         $('.scrollspy').scrollSpy();
